@@ -1,4 +1,28 @@
-<!-- Box-Sizing Pattern -->
+<!--
+//////////////////////////////
+// @{box-sizing}
+// Styling for Box-Sizing Kurs
+.box-sizing {
+  div {
+    background: #ddd;
+    border: solid 5px #999;
+    padding: 1em;
+    margin: 1em 0;
+    width: 200px;
+  }
+  [class$="content"] {
+    box-sizing: content-box;
+  }
+  [class$="border"] {
+    box-sizing: border-box;
+  }
+  [class$="padding"] {
+    box-sizing: padding-box;
+  }
+}
+// {box-sizing}@
+//////////////////////////////
+-->
 <div class="box-sizing">
   <div class="box-sizing__content">
     <code>box-sizing: content-box;</code>

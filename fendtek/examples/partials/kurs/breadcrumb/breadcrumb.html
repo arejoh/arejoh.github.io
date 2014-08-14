@@ -1,4 +1,18 @@
-<!-- Breadcrumb Pattern -->
+<!--
+//////////////////////////////
+// @{breadcrumb}
+// Styling for Breadcrumb Kurs
+.breadcrumb {
+  li {
+    display: inline-block;
+  }
+  li:not(:first-child):before {
+    content: " > ";
+  }
+}
+// {breadcrumb}@
+//////////////////////////////
+-->
 <nav class="breadcrumb">
   <ul>
     <li><a href="">Item 1</a></li>
