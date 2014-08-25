@@ -1,0 +1,6 @@
+#########################
+# Variables available for `kurs` patterns.
+#
+# To use: {{kurs.variable}}
+#########################
+kurs:

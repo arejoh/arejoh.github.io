@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="no">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Innføring i HTML5, CSS3, SASS, COMPASS og gridsystemer</title>
+
+		<meta name="description" content="Innføring i moderne frontendteknikker">
+		<meta name="author" content="Are Johannessen">
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<link rel="stylesheet" href="css/reveal.min.css">
+		<link rel="stylesheet" href="css/theme/default.css" id="theme">
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- If the query includes 'print-pdf', include the PDF print sheet -->
+		<script>
+			if( window.location.search.match( /print-pdf/gi ) ) {
+				var link = document.createElement( 'link' );
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = 'css/print/pdf.css';
+				document.getElementsByTagName( 'head' )[0].appendChild( link );
+			}
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							##Innføring i moderne frontendteknikker
+						</script>
+					</section>
+					<section>
+						<ul>
+							<li>HTML5</li>
+							<li class="fragment">CSS3</li>
+							<li class="fragment">SASS + COMPASS</li>
+							<li class="fragment">RWD + gridsystemer</li>
+						</ul>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							##HTML5
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							(X)HTML vs HTML5
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							```html
+							<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" 
+							"http://www.w3.org/TR/html4/strict.dtd">
+							```
+							vs
+
+							```html
+							<!doctype html>
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Nye elementer for struktur
+						</script>
+					</section>
+					<section>
+						<ul>
+							<li>header</li>
+							<li class="fragment">nav</li>
+							<li class="fragment">footer</li>
+							<li class="fragment">article</li>
+							<li class="fragment">aside</li>
+							<li class="fragment">section</li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							hgroup
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							main
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							(X)HTML
+							```html
+							<div id="content">
+							```
+
+							HTML5
+							```html
+							<main role="main">
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Nye attributter til form elementer
+						</script>
+					</section>
+					<section>
+						<ul>
+							<li>tel</li>
+							<li class="fragment">url</li>
+							<li class="fragment">email</li>
+							<li class="fragment">number</li>
+							<li class="fragment">range</li>
+							<li class="fragment">color</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>datetime</li>
+							<li class="fragment">date</li>
+							<li class="fragment">month</li>
+							<li class="fragment">week</li>
+							<li class="fragment">time</li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							http://html5doctor.com/
+
+							http://caniuse.com
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							ARIA
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							Accessible Rich Internet Applications
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							ARIA - Roles
+						</script>
+					</section>
+					<section>
+						<ul>
+							<li>banner</li>
+							<li class="fragment">form</li>
+							<li class="fragment">main</li>
+							<li class="fragment">navigation</li>
+							<li class="fragment">search</li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							http://www.w3.org/WAI/intro/aria
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							##CSS
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							```css
+	selector {
+		property: value;
+	}
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							selectors
+						</script>
+					</section>
+					<section>
+						<h3>universal</h3>
+						<p class="fragment">*</p>
+					</section>
+					<section>
+						<h3>type</h3>
+						<p class="fragment">h1</p>
+						<p class="fragment">div</p>
+						<p class="fragment">p</p>
+						<p class="fragment">a</p>
+						<p class="fragment">nav</p>
+					</section>
+					<section>
+						<h3>id</h3>
+						<p class="fragment">#idname</p>
+					</section>
+					<section>
+						<h3>class</h3>
+						<p class="fragment">.classname</p>
+						<p class="fragment">.classname1.classname2</p>
+					</section>
+					<section>
+						combinators
+					</section>
+					<section>
+						<h3>descendant</h3>
+						<p class="fragment">h1 img</p>
+						<p class="fragment">div p</p>
+						<p class="fragment">.main p</p>
+					</section>
+					<section>
+						<h3>child</h3>
+						<p class="fragment">div > p</p>
+						<p class="fragment">.main > p</p>
+					</section>
+					<section>
+						<h3>general sibling</h3>
+						<p class="fragment">img ~ p</p>
+					</section>
+					<section>
+						<h3>Adjacent sibling</h3>
+						<p class="fragment">img + p</p>
+					</section>
+					<section>
+						attribute
+					</section>
+					<section>
+						<p>[attribute="value"]</p>
+						<p class="fragment">[attribute*="value"]</p>
+						<p class="fragment">[attribute^="value"]</p>
+						<p class="fragment">[attribute$="value"]</p>
+						<p class="fragment">[attribute~="value"]</p>
+					</section>
+					<section>
+						pseudo elements
+					</section>
+					<section>
+						<p>:link</p>
+						<p class="fragment">:hover</p>
+						<p class="fragment">:visited</p>
+						<p class="fragment">:active</p>
+					</section>
+					<section>
+						<p>:after</p>
+						<p class="fragment">:before</p>
+					</section>
+					<section>
+						<p>:first-letter</p>
+						<p class="fragment">:first-line</p>
+						<p class="fragment">:first-child / :last-child</p>
+						<p class="fragment">:first-of-type / :last-of-type</p>
+					</section>
+					<section>
+						:nth-child(an+b)
+					</section>
+					<section>
+						:not(s)
+					</section>
+					<section>
+						properties
+					</section>
+					<section>
+						<small style="text-decoration: underline;">property</small>
+						<p>box-sizing</p>
+						<small class="fragment" style="text-decoration: underline;">values</small>
+						<p class="fragment">content-box</p>
+						<p class="fragment">border-box</p>
+						<p class="fragment">padding-box</p>
+					</section>
+					<section>
+						<small style="text-decoration: underline;">property</small>
+						<p>display</p>
+						<small class="fragment" style="text-decoration: underline;">values</small>
+						<p class="fragment">block</p>
+						<p class="fragment">inline</p>
+						<p class="fragment">table</p>
+						<p class="fragment">none</p>
+						<p class="fragment">inline-block</p>
+						<p class="fragment">run-in</p>
+						<p class="fragment">flex</p>
+						<p class="fragment">grid</p>
+					</section>
+					
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							##SASS + COMPASS
+						</script>
+					</section>
+					<section>
+						<ul>
+							<li>sass (sass-lang.com)</li>
+							<li class="fragment">less (lesscss.org)</li>
+							<li class="fragment">stylus (learnboost.github.io/stylus)</li>
+						</ul>
+					</section>
+					<section>
+						<ul>
+							<li>Compass (compass-style.org)</li>
+							<li class="fragment">Bourbon (bourbon.io)</li>
+							<li class="fragment">Susy (susy.oddbird.net)</li>
+						</ul>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+							ruby
+						
+							```
+							gem install sass
+							gem install compass
+							compass init
+							compass compile
+							compass watch
+							```
+						</script>
+					</section>
+					<section data-markdown>
+						<script type="text/template">
+						.sass
+
+						```css
+	.container
+	  width: 100%
+						```
+						</script>
+					</section>
+					<section data-markdown class="fragment">
+						<script type="text/template">
+						.scss
+
+						```css
+	.container {
+	  width: 100%;
+	}
+						```
+						</script>
+					</section>
+					<section>
+						partials
+					</section>
+					<section>
+						variables
+					</section>
+					<section>
+						nesting
+					</section>
+					<section>
+						mixins
+					</section>
+					<section>
+						extend
+					</section>
+					<section data-markdown class="fragment">
+						<script type="text/template">
+							operators
+
+							+, -, *, /, %
+						</script>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							##CSS + SASS + COMPASS
+						</script>
+					</section>
+					<section>
+						border-radius
+					</section>
+					<section>
+						box-shadow
+					</section>
+					<section>
+						background
+						<p class="fragment">background-size</p>
+						<p class="fragment">background-origin</p>
+						<p class="fragment">background-clip</p>
+					</section>
+					<section>
+						opacity
+					</section>
+					<section>
+						text-shadow
+					</section>
+					<section>
+						transform
+					</section>
+					<section>
+						transition
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							##RWD + gridsystemer
+						</script>
+					</section>
+					<section>
+						media queries
+					</section>
+					<section>
+						@media [display] and ([query]) [and ([query])...]
+					</section>
+					<section>
+						gridsystemer
+					</section>
+					<section>
+						<p>susy grids (susy.oddbird.net)</p>
+						<p class="fragment">bourbon neat (neat.bourbon.io)</p>
+						<p class="fragment">zen grids (zengrids.com)</p>
+						<p class="fragment">singularity (singularity.gs)</p>
+					</section>
+				</section>
+				<section>
+					<section data-markdown>
+						<script type="text/template">
+							##Hva no ...? Tid til mer...?
+						</script>
+					</section>
+					<section>
+						picture
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.min.js"></script>
+
+		<script>
+
+			// Full list of configuration options available here:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
+				transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
+
+				// Parallax scrolling
+				// parallaxBackgroundImage: 'https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg',
+				// parallaxBackgroundSize: '2100px 900px',
+
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
+					{ src: 'plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
+				]
+			});
+
+		</script>
+
+	</body>
+</html>

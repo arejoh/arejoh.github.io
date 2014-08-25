@@ -1,0 +1,60 @@
+<!-- 
+//////////////////////////////
+// @{background}
+// Styling for Background Kurs
+.background {
+  position: relative;
+  p {
+    margin: 0 0 1em;
+  }
+  .overlay {
+    @include border-radius(20px);
+    background: #fff;
+    @include background-clip();
+    border: solid 20px rgba(0,0,0,0.3);
+    width: 20em;
+    height: 8em;
+    margin-left: -10em;
+    margin-top: -4em;
+    padding: 2em;
+    position: absolute;
+    top: 50%;
+    left: 50%
+  }
+}
+.background-2 {
+  background: url(../images/Bergen_by_night.jpg);
+  background-size: cover;
+  height: 400px;
+  margin: 2em;
+  position: relative;
+  width: 500px;
+  
+  p {
+    background: rgba(0,0,0,0.5);
+    bottom: 1em;
+    color: #fff;
+    font-family: Verdana, sans-serif;
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+  }
+}
+// {background}@
+//////////////////////////////
+-->
+<div class="background">
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto ipsa fuga eos laborum quisquam, at temporibus dolor enim, ex necessitatibus! Laudantium atque quis dignissimos nihil eaque deleniti, quibusdam eos magnam.</p>
+  <p>Suscipit provident rem nobis! Doloribus, molestiae pariatur debitis recusandae, doloremque rerum hic officiis suscipit accusantium cumque itaque illum quaerat placeat optio minus nemo, aliquam quibusdam culpa vel nisi sit commodi.</p>
+  <p>Accusantium perspiciatis tempore, est laudantium unde incidunt eveniet qui illo itaque veritatis iusto reiciendis sequi nobis pariatur commodi ullam. Similique ad tenetur suscipit cumque facilis aspernatur eos. Ipsa, ducimus, iste!</p>
+  <p>Rem aliquam tempore sit exercitationem ut in rerum nisi explicabo vel voluptatum culpa atque asperiores perferendis nulla molestias sint quisquam beatae, ipsum. Impedit, autem, ipsum. Eveniet eligendi exercitationem, corrupti quos.</p>
+  <p>Fuga, molestias nesciunt libero perspiciatis quae quasi laboriosam iure natus error necessitatibus deleniti officiis obcaecati nihil architecto vitae dignissimos praesentium omnis officia placeat reprehenderit, nobis voluptates. Fugiat assumenda laboriosam pariatur.</p>
+  <div class="overlay">
+    background-clip
+  </div>
+</div>
+<div class="background-2">
+  <div class="text-background">
+    <p>Dette er en tekst på gjennomsiktig bakgrunn</p>
+  </div>
+</div>

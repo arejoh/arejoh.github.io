@@ -1,0 +1,11 @@
+timezone: Europe/Oslo
+encoding: utf-8
+
+defaults:
+  -
+    scope:
+      path: .
+      type: "pages"
+    values:
+      layout: default
+      title: "Courses by arejo"
