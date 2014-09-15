@@ -1,5 +1,6 @@
 timezone: Europe/Oslo
 encoding: utf-8
+exclude: ["vendor"]
 
 defaults:
   -
