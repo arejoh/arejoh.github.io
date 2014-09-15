@@ -55,7 +55,7 @@ For å fortelle nettleseren at dokumentet er html putter du <code><!doctype html
 
 ### ARIA - Accessible Rich Internet Applications
 
-Det viktigste/mest brukte er role-attributtet som forteller en klient hvilken rolle et element har i applikasjonen.
+Det viktigste/mest brukte er role-attributtet som forteller en klient hvilken rolle et element har i applikasjonen. Eksempler på aria-roles:
 
 - banner
 - form
@@ -63,15 +63,73 @@ Det viktigste/mest brukte er role-attributtet som forteller en klient hvilken ro
 - navigation
 - search
 
+## CSS
+
+En stilregel består av en selector og flere par av property/value.
+
+<pre>
+    <code>
+selector {
+    property: value;
+}
+    </code>
+</pre>
+
+### Selectors - basic
+
+- <code>*</code> universal
+- <code>h1</code> <code>div</code> <code>p</code> <code>a</code> <code>nav</code> type
+- <code>#idname</code> id
+- <code>.classname</code> class
+
+### Selectors - combinators
+
+- <code>h1 img</code> <code>div p</code> <code>.main p</code> descendant
+- <code>div > p</code> <code>.main p</code> child
+- <code>img ~ p</code> general sibling
+- <code>img + p</code> adjacent sibling
+
+### Selectors - attribute
+
+- <code>[attribute="value"]</code> helt lik
+- <code>[attribute*="value"]</code> inneholder
+- <code>[attribute^="value"]</code> begynner med
+- <code>[attribute$="value"]</code> ender på
+- <code>[attribute~="value"]</code> er i mellomrom-separert-liste
+
+### Selectors - pseudo elements
+
+#### Gamle kjenninger
+
+- <code>:link</code>
+- <code>:hover</code>
+- <code>:visited</code>
+- <code>:active</code>
+
+#### Yngre bekjentskaper
+
+- <code>:after</code>
+- <code>:before</code>
+- <code>:first-letter</code>
+- <code>:first-line</code>
+- <code>:first-child</code>
+- <code>:last-child</code>
+- <code>:first-of-type</code>
+- <code>:last-of-type</code>
+- <code>:nth-child(an+b)</code>
+- <code>:not(s)</code>
+
+
+
 <aside>
-  <div class="resources internal">
+  <div class="resources" rel="internal">
     <h3>Interne ressurser</h3>
     <ul class="resources__listings">
       <li class="resources__item"><a href="fendtek/examples">Examples</a></li>
       <li class="resources__item"><a href="fendtek/slides">Slides</a></li>
     </ul>
   </div>
-  <div>
+  <div class="resources" rel="external">
     <h3>Eksterne ressurser</h3>
     <ul>
         <li class="resources__item"><a href="http://html5doctor.com/">HTML5 Doctor</a></li>

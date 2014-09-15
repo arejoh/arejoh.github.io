@@ -66,19 +66,98 @@
 
 <p><a href="http://arejoh.github.io/fendtek/examples/#/kurs?id=form-1--form-1">Eksempel på bruk av nye attributerverdier</a> <a href="http://arejoh.github.io/fendtek/examples/#/?id=form-2--form-2">Flere eksempler på bruk av nye attributtverdier</a></p>
 
+<h3 id="aria---accessible-rich-internet-applications">ARIA - Accessible Rich Internet Applications</h3>
+
+<p>Det viktigste/mest brukte er role-attributtet som forteller en klient hvilken rolle et element har i applikasjonen. Eksempler på aria-roles:</p>
+
+<ul>
+  <li>banner</li>
+  <li>form</li>
+  <li>main</li>
+  <li>navigation</li>
+  <li>search</li>
+</ul>
+
+<h2 id="css">CSS</h2>
+
+<p>En stilregel består av en selector og flere par av property/value.</p>
+
+<pre>
+    <code>
+selector {
+    property: value;
+}
+    </code>
+</pre>
+
+<h3 id="selectors---basic">Selectors - basic</h3>
+
+<ul>
+  <li><code>*</code> universal</li>
+  <li><code>h1</code> <code>div</code> <code>p</code> <code>a</code> <code>nav</code> type</li>
+  <li><code>#idname</code> id</li>
+  <li><code>.classname</code> class</li>
+</ul>
+
+<h3 id="selectors---combinators">Selectors - combinators</h3>
+
+<ul>
+  <li><code>h1 img</code> <code>div p</code> <code>.main p</code> descendant</li>
+  <li><code>div &gt; p</code> <code>.main p</code> child</li>
+  <li><code>img ~ p</code> general sibling</li>
+  <li><code>img + p</code> adjacent sibling</li>
+</ul>
+
+<h3 id="selectors---attribute">Selectors - attribute</h3>
+
+<ul>
+  <li><code>[attribute="value"]</code> helt lik</li>
+  <li><code>[attribute*="value"]</code> inneholder</li>
+  <li><code>[attribute^="value"]</code> begynner med</li>
+  <li><code>[attribute$="value"]</code> ender på</li>
+  <li><code>[attribute~="value"]</code> er i mellomrom-separert-liste</li>
+</ul>
+
+<h3 id="selectors---pseudo-elements">Selectors - pseudo elements</h3>
+
+<h4 id="gamle-kjenninger">Gamle kjenninger</h4>
+
+<ul>
+  <li><code>:link</code></li>
+  <li><code>:hover</code></li>
+  <li><code>:visited</code></li>
+  <li><code>:active</code></li>
+</ul>
+
+<h4 id="yngre-bekjentskaper">Yngre bekjentskaper</h4>
+
+<ul>
+  <li><code>:after</code></li>
+  <li><code>:before</code></li>
+  <li><code>:first-letter</code></li>
+  <li><code>:first-line</code></li>
+  <li><code>:first-child</code></li>
+  <li><code>:last-child</code></li>
+  <li><code>:first-of-type</code></li>
+  <li><code>:last-of-type</code></li>
+  <li><code>:nth-child(an+b)</code></li>
+  <li><code>:not(s)</code></li>
+</ul>
+
 <aside>
-  <div class="resources internal">
+  <div class="resources" rel="internal">
     <h3>Interne ressurser</h3>
     <ul class="resources__listings">
       <li class="resources__item"><a href="fendtek/examples">Examples</a></li>
       <li class="resources__item"><a href="fendtek/slides">Slides</a></li>
     </ul>
   </div>
-  <div>
+  <div class="resources" rel="external">
     <h3>Eksterne ressurser</h3>
     <ul>
         <li class="resources__item"><a href="http://html5doctor.com/">HTML5 Doctor</a></li>
         <li class="resources__item"><a href="http://caniuse.com/">Can I use _____?</a></li>
+        <li class="resources__item"><a href="http://www.w3.org/WAI/intro/aria">Oversikt over WAI-ARIA hos w3c.org</a></li>
     </ul>
   </div>
 </aside>
