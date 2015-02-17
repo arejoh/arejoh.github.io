@@ -20,5 +20,4 @@
 - Pasta med bacon og grønnsaker
 - Cous-cous med kylling
 - Nudler med kylling, grønnsaker og asiatisk saus
-- 
 
