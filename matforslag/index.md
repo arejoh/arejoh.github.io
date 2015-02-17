@@ -11,11 +11,14 @@
 
 ## Kjøtt
 - Kjøttkaker med gulrotstuing
+- Svinekoteletter med stekte grønnsaker
+- Kylling bryst med potetmos og grønnsaksaus
 
 ## Pasta o.l.
 
 - Spaghetti bolognaise
 - Pasta med bacon og grønnsaker
 - Cous-cous med kylling
-
+- Nudler med kylling, grønnsaker og asiatisk saus
+- 
 
