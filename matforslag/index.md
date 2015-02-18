@@ -1,4 +1,6 @@
-# Menyliste
+---
+layout: default
+---
 
 ## Supper
 - [Chorizo, kikerter og chili](http://trinesmatblogg.no/2014/06/10/smakfull-suppe-med-chorizo-kikerter-og-chili/)
@@ -13,6 +15,7 @@
 - Kjøttkaker med gulrotstuing
 - Svinekoteletter med stekte grønnsaker
 - Kylling bryst med potetmos og grønnsaksaus
+- Bratwurst med linsegryte og sellerirotpure
 
 ## Pasta o.l.
 

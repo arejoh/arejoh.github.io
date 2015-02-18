@@ -1,19 +1,6 @@
-<!doctype html>
-<html>
-  <head>
-    <title>Courses by arejo - {{ page.title }}</title>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <header class="site-header" role="banner">
-      <h1 class="site-header__title">Courses by arejo</h1>
-    </header>
+{% include head.html %}
     <main role="main">
       <h1>{{ page.titel }}</h1>
-      {{ content }}  
+      {{ content }}
     </main>
-    <footer>
-      
-    </footer>
-  </body>
-</html>
+{% include foot.html %}

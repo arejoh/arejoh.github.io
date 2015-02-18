@@ -1,6 +1,6 @@
 timezone: Europe/Oslo
 encoding: utf-8
-exclude: ["vendor"]
+exclude: ["vendor", "fendtek"]
 
 defaults:
   -
@@ -10,3 +10,10 @@ defaults:
     values:
       layout: default
       title: "Courses by arejo"
+  -
+    scope:
+      path: "matforslag"
+      type: "pages"
+    values:
+      layout: default
+      title: "Matforslag"
