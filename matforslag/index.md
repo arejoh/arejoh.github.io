@@ -3,8 +3,8 @@ layout: default
 ---
 
 ## Supper
-- [Chorizo, kikerter og chili](http://trinesmatblogg.no/2014/06/10/smakfull-suppe-med-chorizo-kikerter-og-chili/)
-- [Linsesuppe med bacon og rotgrønnsaker](http://trinesmatblogg.no/2014/03/12/linsesuppe-med-bacon/) 
+- Chorizo, kikerter og chili [[Oppskrift](http://trinesmatblogg.no/2014/06/10/smakfull-suppe-med-chorizo-kikerter-og-chili/)]
+- Linsesuppe med bacon og rotgrønnsaker [[Oppskrift](http://trinesmatblogg.no/2014/03/12/linsesuppe-med-bacon/)]
 
 ## Fisk
 - Laks med agurksalat og rømme
@@ -12,10 +12,11 @@ layout: default
 - Lettsaltet torsk med gulrot, bacon og smør
 
 ## Kjøtt
-- Kjøttkaker med gulrotstuing
-- Svinekoteletter med stekte grønnsaker
-- Kylling bryst med potetmos og grønnsaksaus
 - Bratwurst med linsegryte og sellerirotpure
+- Kjøttkaker med gulrotstuing
+- Kylling bryst med potetmos og grønnsaksaus
+- Svinefilet med potetmos eller ris og grønnsaksaus
+- Svinekoteletter med stekte grønnsaker
 
 ## Pasta o.l.
 
@@ -23,4 +24,3 @@ layout: default
 - Pasta med bacon og grønnsaker [[handleliste](handlelister/pasta_bacon_grsak)]
 - Cous-cous med kylling
 - Nudler med kylling, grønnsaker og asiatisk saus
-
