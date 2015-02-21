@@ -19,8 +19,8 @@ layout: default
 
 ## Pasta o.l.
 
-- Spaghetti bolognaise
-- Pasta med bacon og grønnsaker
+- Spaghetti bolognaise [[handleliste](handlelister/spaghetti_bolognaise/)]
+- Pasta med bacon og grønnsaker [[handleliste](handlelister/pasta_bacon_grsak)]
 - Cous-cous med kylling
 - Nudler med kylling, grønnsaker og asiatisk saus
 
