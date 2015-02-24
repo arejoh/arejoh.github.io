@@ -2,7 +2,7 @@
 title: Spaghetti bolognaise
 ---
 
-Ingredienser ved tillaging (10+ middager)
+Handling ved tillaging (10+ middager)
 ---
 
 - 2,4 kg assortert kjøttdeig
@@ -16,10 +16,8 @@ Ingredienser ved tillaging (10+ middager)
 - buljong eller buljongterninger
 - oregano
 - chili eller tørkede chiliflak
-- salt
-- pepper
 
-Ingredienser ved servering
+Handling ved servering
 ---
 
 - spaghetti

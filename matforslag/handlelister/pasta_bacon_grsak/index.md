@@ -3,7 +3,7 @@ layout: default
 title: Pasta med bacon og grønnsaker
 ---
 
-Ingredienser ved servering
+Handling ved servering
 ---
 
 - Fullkornspasta
@@ -14,7 +14,5 @@ Ingredienser ved servering
 - 1/2 brokkoli
 - sitron
 - smør
-- salt
-- pepper
 - chili eller chiliflak
 
